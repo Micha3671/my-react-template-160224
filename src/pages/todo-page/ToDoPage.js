@@ -22,7 +22,7 @@ function ToDoPage() {
 
   //###Ergänzung zum Code vom Unterricht:###
   //Wenn todos noch leer ist, gib leeren Container aus
-  if (todos.length == 0) {
+  if (todos.length === 0) {
     return <div className={styles.mainContainer}></div>;
   }
 

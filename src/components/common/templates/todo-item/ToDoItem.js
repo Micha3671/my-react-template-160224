@@ -7,9 +7,10 @@ function ToDoItem({ todo }) {
       <h1>ToDo-Item</h1>
       <div className={styles.horizontalLine}></div>
       <p>Aufgabe: {todo.task}</p>
-      <p>DueDate: {new Date(Date.now()).toDateString()}</p>
+      <p>DueDate: {new Date(todo.dueDate).toDateString()}</p>
       <label>
-        Geschafft: <input type="checkbox" defaultChecked="false"></input>
+        Geschafft:{" "}
+        <input type="checkbox" defaultChecked={todo.isDone} readOnly />
       </label>
     </div>
   );
